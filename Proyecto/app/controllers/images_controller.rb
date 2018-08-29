@@ -10,7 +10,7 @@ class ImagesController < ApplicationController
         @image = Image.new
     end
 
-    def crete 
+    def create 
         #render plain: params[:image].inspect
         @image = Image.new images_params
         @image.save
@@ -37,7 +37,7 @@ class ImagesController < ApplicationController
     private
 
     def images_params
-        params.require(:image).permit(:description)
+        params.require(:image).permit :description, :picture        
     end 
 
     def set_image
