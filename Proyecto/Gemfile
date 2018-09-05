@@ -33,7 +33,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap'
 gem 'carrierwave' 
 gem 'mini_magick'
+gem 'jwt'
 gem 'devise', git: 'git://github.com/plataformatec/devise.git'
+
 
 
 group :development, :test do
